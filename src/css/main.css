@@ -1,0 +1,367 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Tahoma", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #333A3D;
+}
+
+body {
+	background-color: #fff;
+}
+
+.container {
+  align-items: center;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 940px;
+}
+
+.container_align-top {
+  align-items: flex-start;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: 27.5px;
+  border: 1px solid #fff;
+  height: 55px;
+  margin: 0 auto;
+  transition-duration: .3s;
+  width: 218px;
+  display: block;
+}
+
+.button__text {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition-duration: .3s;
+}
+
+.button:hover, .button:focus {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button:hover .button__text, .button:focus .button__text {
+  color: #333A3D;
+}
+
+.button_colored {
+  background-color: #333A3D;
+}
+
+.button-text_colored {
+  color: #fff;
+}
+
+.button_colored:hover, .button_colored:focus {
+  background-color: transparent;
+  border-color: #333A3D;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #558195;
+  text-align: center;
+}
+
+.header__item {
+  flex: 1;
+  color: #fff;
+}
+
+.header__logo {
+  margin-top: 54px;
+  margin-bottom: 93px;
+}
+
+.header__contact {
+  margin-top: 93px;
+}
+
+.header__contact-text {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.header__to-bottom-arrow {
+  margin-top: 177px;
+  margin-bottom: 58px;
+}
+
+.main__item {
+  flex: 1;
+}
+
+.main__item_wide {
+  flex: 1 0 auto;
+}
+
+.main__about-header {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 89px;
+}
+
+.main__about-header_sm-padding {
+  padding-top: 44px;
+  padding-bottom: 26px;
+}
+
+.main__about-header-text {
+  text-transform: uppercase;
+}
+
+.main__about-subheader {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.main__about-subheader-text {
+  text-transform: uppercase;
+}
+
+.main__about-subheader::after {
+  border-bottom: 3px solid #558195;
+  padding-top: 13px;
+  content: "";
+  display: block;
+  width: 72px;
+}
+
+.main__about-desc_bottom-padding {
+  padding-bottom: 75px;
+}
+
+.main__about-desc-text {
+  padding-bottom: 34px;
+  padding-right: 50px;
+}
+
+.main__about-desc-text_narrow {
+  text-align: center;
+  width: 500px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.main__about-list {
+  display: block;
+  list-style: none;
+}
+
+.main__about-list-item {
+  padding-bottom: 40px;
+}
+
+.main__about-list-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+
+.main__about-list-icon_bug {
+  background-image: url(../images/bug.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main__about-list-icon_bell {
+  background-image: url(../images/bell.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main__about-list-icon_arrow {
+  background-image: url(../images/storm.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main__about-list-icon_camera {
+  background-image: url(../images/camera.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main__about-list-item-text {
+  color: #B4B5B5;
+}
+
+.main__about-list-item-text_primary {
+  color: #558195;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.main__feature {
+  flex: 1;
+  text-align: center;
+}
+
+.main__feature-number {
+  border-radius: 50%;
+  border: 1px solid #333A3D;
+  display: block;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 auto;
+  text-align: center;
+  width: 75px;
+  transition-duration: .3s;
+}
+
+/* I'm really sorry for that part of code :D */
+
+.main__feature-number-text {
+  font-size: 30px;
+}
+
+.main__feature-number:hover .main__feature-number-text {
+  color: #fff;
+}
+
+.main__feature-number:hover {
+  color: #fff;
+  background-color: #333A3D;
+}
+
+/* I'm really sorry for that part of code :D */
+
+.main__feature-text {
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333A3D;
+  display: flex;
+  height: 113px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__item {
+  flex: 1;
+  height: inherit;
+  text-align: center;
+}
+
+.footer__item-date {
+  color: #A5A7A8;
+}
+
+.footer__item-date::after {
+  content: "/";
+  padding: 0 5px;
+  color: #A5A7A8;
+}
+
+.footer__item-text {
+  color: #A5A7A8;
+}
+
+.footer__item-link {
+  color: #A5A7A8;
+  text-decoration: none;
+}
+
+.footer__item-link:hover, .footer__item-link:focus {
+  color: #EEEFEF;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+/* ADAPTIVE PART GOES HERE */
+
+@media (max-width: 400px) {
+  .container {
+    flex-flow: column wrap;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .header__logo {
+    margin: 30px 0px;
+  }
+  .header__contact {
+    margin: 15px 0;
+  }
+  .header__to-bottom-arrow {
+    margin: 30px 0;
+  }
+  .main__about-desc-text_narrow {
+    width: 100%;
+  }
+  .main__about-header {
+    padding: 30px 0px;
+  }
+  .main__about-list-icon {
+    float: left;
+  }
+  .main__about-list-item-text_primary {
+    display: block;
+  }
+  .footer__item {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+  }
+  .footer__item-link {
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-flow: column wrap;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .header__logo {
+    margin: 30px 0px;
+  }
+  .header__contact {
+    margin: 15px 0;
+  }
+  .header__to-bottom-arrow {
+    margin: 30px 0;
+  }
+  .main__about-desc-text_narrow {
+    width: 100%;
+  }
+  .main__about-header {
+    padding: 30px 0px;
+  }
+  .main__about-list-icon {
+    float: left;
+  }
+  .main__about-list-item-text_primary {
+    display: block;
+  }
+  .footer__item {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+  }
+  .footer__item-link {
+    display: block;
+  }
+}
